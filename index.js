@@ -1,5 +1,22 @@
 var katzDeliLine = [];
 
+let ticketNumber = 1;
+function takeANumber(katzDeliLine){
+ 
+  katzDeliLine.push(ticketNumber);
+
+  return `Welcome. You're ticket number ${ticketNumber++}`
+}
+
+// takeANumber(katzDeliLine) => "Welcome. You're ticket number #1" [1]
+// takeANumber(katzDeliLine) => "Welcome. You're ticket number #2" [1,2]
+
+// nowServing(katzDeliLine) [2]
+// nowServing(katzDeliLine) []
+
+// takeANumber(katzDeliLine) => "Welcome. You're ticket number #3" [3]
+
+
 function takeANumber(katzDeliLine,newPerson){
   
   katzDeliLine.push(newPerson);
